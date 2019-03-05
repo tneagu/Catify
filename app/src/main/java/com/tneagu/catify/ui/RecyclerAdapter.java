@@ -35,6 +35,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         String imageUrl = photoUrls.get(position);
         Picasso.get()
                 .load(imageUrl)
+                .fit()
                 .into(image);
     }
 
